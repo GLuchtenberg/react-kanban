@@ -15,7 +15,7 @@ const StyledBoard = styled.div`
   display: flex;
   align-items: flex-start;
   ${({ height }) =>
-    height ? `height: ${height};` : ""} /* max-height:300px; */
+    height ? `height: ${height};` : ""} 
 `;
 
 const Lanes = styled.div`
@@ -43,7 +43,7 @@ function Board({
   allowRemoveCard,
   onCardRemove,
   renderLaneAdder,
-  height
+  height,
   onCardNew
 }) {
   const [board, setBoard] = useState(children);
